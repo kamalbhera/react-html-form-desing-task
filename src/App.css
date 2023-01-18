@@ -1,38 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap");
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  width: 100%;
+  height: 600px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  box-sizing: border-box;
+  background-color: #7c7c7c;
+  width: 480px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+
+  height: 65px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.input {
+  box-sizing: border-box;
+  background-color: #7c7c7c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px white solid;
+  border-radius: 15px;
+  height: 40px;
+  align-items: flex-start;
+  padding: 5px;
   color: white;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.dob {
+  box-sizing: border-box;
+  background-color: #7c7c7c ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px white solid;
+  border-radius: 15px;
+  height: 40px;
+  align-items: center;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+textarea::placeholder {
+  color: white;
+  font-style: italic;
+  opacity: 0.5;
+  font-size: 15px;
 }
